@@ -4157,6 +4157,12 @@ dashboards:
   - name: pull-kubernetes-verify
     test_group_name: pull-kubernetes-verify
     base_options: 'width=10'
+
+- name: CRI-O
+  dashboard_tab:
+  - name: CRI-O
+    test_group_name: crio
+    base_options: 'include-filter-by-regex=cri%7Co'
 #
 # Start dashboard groups
 #
