@@ -1052,6 +1052,11 @@ test_groups:
   gcs_prefix: kubernetes-jenkins/logs/ci-kubernetes-e2e-cos-docker-validation-slow
 - name: ci-kubernetes-node-cos-docker-validation
   gcs_prefix: kubernetes-jenkins/logs/ci-kubernetes-node-cos-docker-validation
+# cri-o # need to create these jobs first?
+- name: ci-kubernetes-e2e-gci-gce-cri-o
+  gcs_prefix: kubernetes-jenkins/logs/ci-kubernetes-e2e-gci-gce-docker
+- name: ci-kubernetes-node-cri-o
+  gcs_prefix: kubernetes-jenkins/logs/ci-kubernetes-node-cri-o
 # garbage collector tests
 - name: ci-kubernetes-e2e-gce-garbage
   gcs_prefix: kubernetes-jenkins/logs/ci-kubernetes-e2e-gce-garbage
@@ -4208,6 +4213,6 @@ dashboard_groups:
 
 - name: sig-scalability-all  # TODO(fejta): rename this to sig-scalability
   dashboard_names:
-  - sig-scalability  # TODO(fejta): rename this google-kubemark 
+  - sig-scalability  # TODO(fejta): rename this google-kubemark
   - google-gce-scale
   - google-gke-scale
